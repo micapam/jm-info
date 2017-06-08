@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title><%= @item[:title] %> - Joshua Mostafa</title>
+    <title>Hymn to Saraswati - Joshua Mostafa</title>
     <link rel="stylesheet" href="/resources/bootstrap-journal.min.css" />
     <link rel="stylesheet" href="/resources/font-awesome.min.css" />
     <link rel="stylesheet" href="/resources/bootstrap-social.css" />
@@ -11,22 +11,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/content/media/favicon-16x16.png">
     <script type="text/javascript" src="/resources/jquery.min.js"></script>
     <script type="text/javascript" src="/resources/bootstrap.min.js"></script>
-    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
-    <meta property="og:url" content="http://joshuamostafa.info<%= @item_rep.path %>" />
+    <meta name="generator" content="Nanoc 4.7.10">
+    <meta property="og:url" content="http://joshuamostafa.info/2014/09/hymn-to-saraswati/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="<%= @item[:title] %>" />
-    <meta property="og:description" content="<%= get_post_description item %>" />
-    <meta property="og:image" content="http://joshuamostafa.info/media/thumbs/<%= @item[:thumb] %>" />
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-3519471-5', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+    <meta property="og:title" content="Hymn to Saraswati" />
+    <meta property="og:description" content=" The sixth issue of Abraxas was launched last Friday (26 September 2014). I was in London that day, so I made i..." />
+    <meta property="og:image" content="http://joshuamostafa.info/media/thumbs/abraxas.jpg" />
   </head>
   <body>
     <div class="container">
@@ -48,15 +38,36 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <% %w(essays fiction poetry reviews).each do |tag| %>
-                <% path = "/#{tag}/" %>
-                <li class="<%= 'active' if @item_rep.path == path %>">
-                  <a href="<%= path %>">
-                    <%= tag.capitalize %>
+              
+                
+                <li class="">
+                  <a href="/essays/">
+                    Essays
                   </a>
                 </li>
-              <% end %>
-              <!--<li></li><%= @item_rep.path %>-->
+              
+                
+                <li class="">
+                  <a href="/fiction/">
+                    Fiction
+                  </a>
+                </li>
+              
+                
+                <li class="">
+                  <a href="/poetry/">
+                    Poetry
+                  </a>
+                </li>
+              
+                
+                <li class="">
+                  <a href="/reviews/">
+                    Reviews
+                  </a>
+                </li>
+              
+              <!--<li></li>/2014/09/hymn-to-saraswati/-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
@@ -83,7 +94,29 @@
         </div><!-- /.container-fluid -->
       </nav>
       <div>
-        <%= yield %>
+        
+<div class="jumbotron">
+  <h1>Hymn to Saraswati</h1>
+  <aside>poetry &bullet; September 29, 2014</aside>
+</div>
+<div class="row">
+  <div class="col-md-7">
+    <article>
+      
+<p>The sixth issue of <em>Abraxas</em> was launched last Friday (26 September 2014). I was in London that day, so I made it to Treadwell’s bookshop just in time for the copies of the journal to arrive from the Belgian printer, before getting on the plane. It’s a handsome full-sized magazine, beautifully laid out. I’m pleased that my sonnet ‘Hymn to Saraswatī’ is one of the two poems included between its covers.</p>
+
+    </article>
+    
+      <a href="http://fulgur.co.uk/shop/abraxas/abraxas-journal-issue-6/">
+        Abraxas 6 &rsaquo;
+      </a>
+    
+  </div>
+  <div class="col-md-5">
+    <div class="post-image post-image-full" style="background-image:url('/media/thumbs/abraxas.jpg')"></div>      
+  </div>
+</div>
+ 
       </div>
     </div>
   </body>

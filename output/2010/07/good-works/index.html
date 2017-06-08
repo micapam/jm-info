@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title><%= @item[:title] %> - Joshua Mostafa</title>
+    <title>Good works - Joshua Mostafa</title>
     <link rel="stylesheet" href="/resources/bootstrap-journal.min.css" />
     <link rel="stylesheet" href="/resources/font-awesome.min.css" />
     <link rel="stylesheet" href="/resources/bootstrap-social.css" />
@@ -11,22 +11,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/content/media/favicon-16x16.png">
     <script type="text/javascript" src="/resources/jquery.min.js"></script>
     <script type="text/javascript" src="/resources/bootstrap.min.js"></script>
-    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
-    <meta property="og:url" content="http://joshuamostafa.info<%= @item_rep.path %>" />
+    <meta name="generator" content="Nanoc 4.7.10">
+    <meta property="og:url" content="http://joshuamostafa.info/2010/07/good-works/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="<%= @item[:title] %>" />
-    <meta property="og:description" content="<%= get_post_description item %>" />
-    <meta property="og:image" content="http://joshuamostafa.info/media/thumbs/<%= @item[:thumb] %>" />
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-3519471-5', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+    <meta property="og:title" content="Good works" />
+    <meta property="og:description" content=" Issue 121 of Island magazine is out. Among the essays, stories and poetry is my poem, ‘Good Works’: Sometimes ..." />
+    <meta property="og:image" content="http://joshuamostafa.info/media/thumbs/easter.jpg" />
   </head>
   <body>
     <div class="container">
@@ -48,15 +38,36 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <% %w(essays fiction poetry reviews).each do |tag| %>
-                <% path = "/#{tag}/" %>
-                <li class="<%= 'active' if @item_rep.path == path %>">
-                  <a href="<%= path %>">
-                    <%= tag.capitalize %>
+              
+                
+                <li class="">
+                  <a href="/essays/">
+                    Essays
                   </a>
                 </li>
-              <% end %>
-              <!--<li></li><%= @item_rep.path %>-->
+              
+                
+                <li class="">
+                  <a href="/fiction/">
+                    Fiction
+                  </a>
+                </li>
+              
+                
+                <li class="">
+                  <a href="/poetry/">
+                    Poetry
+                  </a>
+                </li>
+              
+                
+                <li class="">
+                  <a href="/reviews/">
+                    Reviews
+                  </a>
+                </li>
+              
+              <!--<li></li>/2010/07/good-works/-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
@@ -83,7 +94,56 @@
         </div><!-- /.container-fluid -->
       </nav>
       <div>
-        <%= yield %>
+        
+<div class="jumbotron">
+  <h1>Good works</h1>
+  <aside>poetry &bullet; July 15, 2010</aside>
+</div>
+<div class="row">
+  <div class="col-md-7">
+    <article>
+      
+<p>Issue 121 of <em>Island</em> magazine is out. Among the essays, stories and poetry is my poem, ‘Good Works’:</p>
+
+<blockquote>
+  <p>Sometimes her fingers close a nail’s breadth<br />
+Or tiny cross’s height below her necklace.<br />
+Awoken by an owl, begins a prayer<br />
+Then stops, abashed. No one’s there to hear.</p>
+
+  <p>A friend suggests she meditate. But it’s<br />
+Too lonely. Gaudy surrogates (I-ching<br />
+Or yoga) cannot help. The dethroned fraud<br />
+Had majesty court jesters can’t replace.</p>
+
+  <p>She writes long letters, puzzling bureaucrats<br />
+In Lhasa—Myanmar—Stare Kiejkuty<br />
+To try to soften bars and iron minds<br />
+With nothing but a hopeful curve of script.</p>
+
+  <p>St Vincent de Paul’s Sunday morning shift<br />
+Is always hers; she lingers when the others<br />
+Walk in with the smell of grace on them.<br />
+She sniffs and exhales like a reformed smoker.</p>
+
+  <p>Today, black-laced, farewells an old friend<br />
+An awkward goat among the flock. She mourns<br />
+The warmth of knowing that no effort goes<br />
+Unseen. All she has is cold good works.</p>
+</blockquote>
+
+    </article>
+    
+      <a href="https://islandmag.com/">
+        Island 121 &rsaquo;
+      </a>
+    
+  </div>
+  <div class="col-md-5">
+    <div class="post-image post-image-full" style="background-image:url('/media/thumbs/easter.jpg')"></div>      
+  </div>
+</div>
+ 
       </div>
     </div>
   </body>

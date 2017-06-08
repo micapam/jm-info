@@ -1,0 +1,14 @@
+<% list.each_slice(4) do |row| %>
+  <div class="row">
+    <% row.each do |post| %>
+      <div class="col-md-3">
+        <a class="post-link" href="<%= post.path %>">
+          <div class="post-thumb post-image" style="background-image:url('/media/thumbs/<%= post[:thumb] %>')"></div>
+          <span class="post-caption">
+            <%= post[:title] %> &rsaquo;
+          </span>
+        </div>
+      </a>
+    <% end %>
+  </div>
+<% end %>

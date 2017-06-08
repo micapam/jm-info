@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title><%= @item[:title] %> - Joshua Mostafa</title>
+    <title>Corbyn and Europe - Joshua Mostafa</title>
     <link rel="stylesheet" href="/resources/bootstrap-journal.min.css" />
     <link rel="stylesheet" href="/resources/font-awesome.min.css" />
     <link rel="stylesheet" href="/resources/bootstrap-social.css" />
@@ -11,22 +11,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/content/media/favicon-16x16.png">
     <script type="text/javascript" src="/resources/jquery.min.js"></script>
     <script type="text/javascript" src="/resources/bootstrap.min.js"></script>
-    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
-    <meta property="og:url" content="http://joshuamostafa.info<%= @item_rep.path %>" />
+    <meta name="generator" content="Nanoc 4.7.10">
+    <meta property="og:url" content="http://joshuamostafa.info/2015/09/corbyn-and-europe/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="<%= @item[:title] %>" />
-    <meta property="og:description" content="<%= get_post_description item %>" />
-    <meta property="og:image" content="http://joshuamostafa.info/media/thumbs/<%= @item[:thumb] %>" />
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-3519471-5', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+    <meta property="og:title" content="Corbyn and Europe" />
+    <meta property="og:description" content=" At the Overland website, I’ve written about the Labour leadership contest, Jeremy Corbyn’s candidature and the..." />
+    <meta property="og:image" content="http://joshuamostafa.info/media/thumbs/corbyn.jpg" />
   </head>
   <body>
     <div class="container">
@@ -48,15 +38,36 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <% %w(essays fiction poetry reviews).each do |tag| %>
-                <% path = "/#{tag}/" %>
-                <li class="<%= 'active' if @item_rep.path == path %>">
-                  <a href="<%= path %>">
-                    <%= tag.capitalize %>
+              
+                
+                <li class="">
+                  <a href="/essays/">
+                    Essays
                   </a>
                 </li>
-              <% end %>
-              <!--<li></li><%= @item_rep.path %>-->
+              
+                
+                <li class="">
+                  <a href="/fiction/">
+                    Fiction
+                  </a>
+                </li>
+              
+                
+                <li class="">
+                  <a href="/poetry/">
+                    Poetry
+                  </a>
+                </li>
+              
+                
+                <li class="">
+                  <a href="/reviews/">
+                    Reviews
+                  </a>
+                </li>
+              
+              <!--<li></li>/2015/09/corbyn-and-europe/-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
@@ -83,7 +94,33 @@
         </div><!-- /.container-fluid -->
       </nav>
       <div>
-        <%= yield %>
+        
+<div class="jumbotron">
+  <h1>Corbyn and Europe</h1>
+  <aside>essay &bullet; September 2, 2015</aside>
+</div>
+<div class="row">
+  <div class="col-md-7">
+    <article>
+      
+<p>At the <em>Overland</em> website, I’ve written about the Labour leadership contest, Jeremy Corbyn’s candidature and the European question:</p>
+
+<blockquote>
+  <p>Often, the impulses and motivations ascribed to the Corbyn campaign seem suspiciously congruent with the Blairites’ own actions and disavowed impulses: a textbook case of projection. A Corbyn victory would be driven by entryism! cry the remnants of a tiny coterie who captured power despite being so ideologically opposed to the mainstream of the party that they openly embraced the legacy of Margaret Thatcher. Handwringing warnings of splits — remember the Gang of Four! — are being made by those most likely to carry them out (even, shamelessly, by those who were involved in the original SDP split from Labour), making them closer to threats than to warnings. The mastermind behind the infamous ‘dodgy dossier’, cobbled together to justify the rush to invade Iraq, has sternly urged the party not to do anything rash. ‘Does he even want to be leader?’ scoff a political class despised for knowing no principle but personal ambition and the will to power.</p>
+</blockquote>
+
+    </article>
+    
+      <a href="https://overland.org.au/2015/09/corbyns-achilles-heel/">
+        Overland &rsaquo;
+      </a>
+    
+  </div>
+  <div class="col-md-5">
+    <div class="post-image post-image-full" style="background-image:url('/media/thumbs/corbyn.jpg')"></div>      
+  </div>
+</div>
+ 
       </div>
     </div>
   </body>

@@ -1,0 +1,21 @@
+
+<div class="jumbotron">
+  <h1><%= item[:title] %></h1>
+  <aside><%= item[:tags].join(' &bullet; ') %> &bullet; <%= get_pretty_date item %></aside>
+</div>
+<div class="row">
+  <div class="col-md-7">
+    <article>
+      <%= yield %>
+    </article>
+    <% if item[:source] %>
+      <a href="<%= item[:source][:url] %>">
+        <%= item[:source][:publication] %> &rsaquo;
+      </a>
+    <% end %>
+  </div>
+  <div class="col-md-5">
+    <div class="post-image post-image-full" style="background-image:url('/media/thumbs/<%= item[:thumb] %>')"></div>      
+  </div>
+</div>
+ 

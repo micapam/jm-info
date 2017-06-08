@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title><%= @item[:title] %> - Joshua Mostafa</title>
+    <title>Philosophy in the round - Joshua Mostafa</title>
     <link rel="stylesheet" href="/resources/bootstrap-journal.min.css" />
     <link rel="stylesheet" href="/resources/font-awesome.min.css" />
     <link rel="stylesheet" href="/resources/bootstrap-social.css" />
@@ -11,22 +11,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/content/media/favicon-16x16.png">
     <script type="text/javascript" src="/resources/jquery.min.js"></script>
     <script type="text/javascript" src="/resources/bootstrap.min.js"></script>
-    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
-    <meta property="og:url" content="http://joshuamostafa.info<%= @item_rep.path %>" />
+    <meta name="generator" content="Nanoc 4.7.10">
+    <meta property="og:url" content="http://joshuamostafa.info/2015/05/philosophy-in-the-round/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="<%= @item[:title] %>" />
-    <meta property="og:description" content="<%= get_post_description item %>" />
-    <meta property="og:image" content="http://joshuamostafa.info/media/thumbs/<%= @item[:thumb] %>" />
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-3519471-5', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+    <meta property="og:title" content="Philosophy in the round" />
+    <meta property="og:description" content=" Back in 2012 I reviewed Bubbles, the first volume of Peter Sloterdijk’s Spheres trilogy, for the LA Review of ..." />
+    <meta property="og:image" content="http://joshuamostafa.info/media/thumbs/antique_globe.jpg" />
   </head>
   <body>
     <div class="container">
@@ -48,15 +38,36 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <% %w(essays fiction poetry reviews).each do |tag| %>
-                <% path = "/#{tag}/" %>
-                <li class="<%= 'active' if @item_rep.path == path %>">
-                  <a href="<%= path %>">
-                    <%= tag.capitalize %>
+              
+                
+                <li class="">
+                  <a href="/essays/">
+                    Essays
                   </a>
                 </li>
-              <% end %>
-              <!--<li></li><%= @item_rep.path %>-->
+              
+                
+                <li class="">
+                  <a href="/fiction/">
+                    Fiction
+                  </a>
+                </li>
+              
+                
+                <li class="">
+                  <a href="/poetry/">
+                    Poetry
+                  </a>
+                </li>
+              
+                
+                <li class="">
+                  <a href="/reviews/">
+                    Reviews
+                  </a>
+                </li>
+              
+              <!--<li></li>/2015/05/philosophy-in-the-round/-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
@@ -83,7 +94,33 @@
         </div><!-- /.container-fluid -->
       </nav>
       <div>
-        <%= yield %>
+        
+<div class="jumbotron">
+  <h1>Philosophy in the round</h1>
+  <aside>essay &bullet; review &bullet; May 15, 2015</aside>
+</div>
+<div class="row">
+  <div class="col-md-7">
+    <article>
+      
+<p>Back in 2012 I reviewed <em>Bubbles</em>, the first volume of Peter Sloterdijk’s Spheres trilogy, for the <em>LA Review of Books</em>. Now, I’ve reviewed Globes, the second volume, this time for the <em>Sydney Review of Books</em>:</p>
+
+<blockquote>
+  <p>Later, in the age of European imperialism, it became possible to speak about world history. World history is not merely the story of an already-existing world, but the story by which the world becomes conscious of itself: it is the becoming-world of the world as such. Yet this process, and its culmination in the establishment of the contemporary global market, undermines the very sense of distance by which we have, in the past, understood the world’s enormity…</p>
+</blockquote>
+
+    </article>
+    
+      <a href="http://sydneyreviewofbooks.com/globes-peter-sloterdijk-review/">
+        Sydney Review of Books &rsaquo;
+      </a>
+    
+  </div>
+  <div class="col-md-5">
+    <div class="post-image post-image-full" style="background-image:url('/media/thumbs/antique_globe.jpg')"></div>      
+  </div>
+</div>
+ 
       </div>
     </div>
   </body>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title><%= @item[:title] %> - Joshua Mostafa</title>
+    <title>Mr Morden's Tree - Joshua Mostafa</title>
     <link rel="stylesheet" href="/resources/bootstrap-journal.min.css" />
     <link rel="stylesheet" href="/resources/font-awesome.min.css" />
     <link rel="stylesheet" href="/resources/bootstrap-social.css" />
@@ -11,22 +11,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/content/media/favicon-16x16.png">
     <script type="text/javascript" src="/resources/jquery.min.js"></script>
     <script type="text/javascript" src="/resources/bootstrap.min.js"></script>
-    <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
-    <meta property="og:url" content="http://joshuamostafa.info<%= @item_rep.path %>" />
+    <meta name="generator" content="Nanoc 4.7.10">
+    <meta property="og:url" content="http://joshuamostafa.info/2013/03/mr-mordens-tree/" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="<%= @item[:title] %>" />
-    <meta property="og:description" content="<%= get_post_description item %>" />
-    <meta property="og:image" content="http://joshuamostafa.info/media/thumbs/<%= @item[:thumb] %>" />
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-3519471-5', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+    <meta property="og:title" content="Mr Morden's Tree" />
+    <meta property="og:description" content=" Extract: …this was what he did, plant trees, though there was no point, really: trees grew of their own accord..." />
+    <meta property="og:image" content="http://joshuamostafa.info/media/thumbs/forest_sunlight.jpg" />
   </head>
   <body>
     <div class="container">
@@ -48,15 +38,36 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <% %w(essays fiction poetry reviews).each do |tag| %>
-                <% path = "/#{tag}/" %>
-                <li class="<%= 'active' if @item_rep.path == path %>">
-                  <a href="<%= path %>">
-                    <%= tag.capitalize %>
+              
+                
+                <li class="">
+                  <a href="/essays/">
+                    Essays
                   </a>
                 </li>
-              <% end %>
-              <!--<li></li><%= @item_rep.path %>-->
+              
+                
+                <li class="">
+                  <a href="/fiction/">
+                    Fiction
+                  </a>
+                </li>
+              
+                
+                <li class="">
+                  <a href="/poetry/">
+                    Poetry
+                  </a>
+                </li>
+              
+                
+                <li class="">
+                  <a href="/reviews/">
+                    Reviews
+                  </a>
+                </li>
+              
+              <!--<li></li>/2013/03/mr-mordens-tree/-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="dropdown">
@@ -83,7 +94,33 @@
         </div><!-- /.container-fluid -->
       </nav>
       <div>
-        <%= yield %>
+        
+<div class="jumbotron">
+  <h1>Mr Morden's Tree</h1>
+  <aside>fiction &bullet; March 11, 2013</aside>
+</div>
+<div class="row">
+  <div class="col-md-7">
+    <article>
+      
+<p>Extract:</p>
+
+<blockquote>
+  <p>…this was what he did, plant trees, though there was no point, really: trees grew of their own accord, as they had done before the first bald, bickering apes descended from their branches, and they would do so long after the extinction of this interloping species, a thought that gave him some satisfaction in those moments when he accidentally read the headlines, or someone tried to speak to him, as the man next door almost did at that moment, catching a glimpse of Mr Morden’s hat dipping as he pushed and twisted at the ground, desiccating it and slicing through fat earthworms with the point of his shovel, which brought a comment to the lips of the neighbour, something about his own rose-beds and the intransigence of the earth giving him blisters, stillborn words turned to a cough, because he remembered in time that Mr Morden was not one for a chat, surly old bastard…</p>
+</blockquote>
+
+    </article>
+    
+      <a href="http://oblongmagazine.com/2013/09/12/mr-mordens-tree-2/">
+        Oblong vol. 2 &rsaquo;
+      </a>
+    
+  </div>
+  <div class="col-md-5">
+    <div class="post-image post-image-full" style="background-image:url('/media/thumbs/forest_sunlight.jpg')"></div>      
+  </div>
+</div>
+ 
       </div>
     </div>
   </body>

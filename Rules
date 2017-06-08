@@ -1,6 +1,13 @@
 #!/usr/bin/env ruby
 
 compile '/**/*.html' do
+  filter :erb
+  layout '/default.*'
+end
+
+compile '/posts/*' do
+  filter :kramdown
+  layout '/post.*' 
   layout '/default.*'
 end
 
@@ -11,6 +18,12 @@ end
 compile '/**/*.md' do
   filter :kramdown
   layout '/default.*'
+end
+
+route '/posts/*' do
+  y,m,d,slug = /([0-9]+)\-([0-9]+)\-([0-9]+)\-([^\/]+)\.md/.match(item.identifier).captures
+
+  "/#{y}/#{m}/#{slug}/index.html"
 end
 
 route '/**/*.{html,md}' do
