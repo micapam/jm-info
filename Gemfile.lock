@@ -10,6 +10,7 @@ GEM
     cri (2.9.1)
       colored (~> 1.2)
     ddplugin (1.0.1)
+    dotenv (2.2.1)
     ffi (1.9.18)
     formatador (0.2.5)
     guard (2.14.1)
@@ -61,6 +62,8 @@ GEM
       ffi (>= 0.5.0)
     ref (2.0.0)
     ruby_dep (1.5.0)
+    rzotero (0.0.2)
+      nokogiri (>= 1.4.0)
     sanitize (4.5.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.4.4)
@@ -75,11 +78,13 @@ PLATFORMS
 
 DEPENDENCIES
   adsf
+  dotenv
   guard-nanoc
   highline
   kramdown
   nanoc (~> 4.7)
   rake
+  rzotero
   sanitize
   stringex
 
