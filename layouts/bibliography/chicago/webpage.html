@@ -1,0 +1,3 @@
+<%= render('/bibliography/chicago/creators.*', creators: entry.creators) %>
+'<%= @entry.title.chomp('.') %>.' <em><%= @entry.website_title %></em>.
+Accessed <%= @entry.access_date %>. <% @entry.url %>.

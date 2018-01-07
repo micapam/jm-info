@@ -1,0 +1,7 @@
+<%= render('/bibliography/chicago/creators.*', creators: entry.creators) %>
+<em><%= @entry.title %></em>.
+<% if entry.translators.any? %>
+  Translated by
+  <%= render('/bibliography/chicago/creators.*', creators: entry.translators) %>.
+<% end %>
+<%= @entry.place %>: <%= @entry.publisher %>, <%= @entry.date %>.

@@ -1,0 +1,4 @@
+<%= render('/bibliography/chicago/creators.*', creators: entry.creators) %>
+'<%= @entry.title.chomp('.') %>.' <em><%= @entry.publication_title %></em>
+<%= @entry.volume %><% if @entry.issue %>, no. <%= @entry.issue %><% end %>
+(<%= @entry.date %>): <%= @entry.pages %>.

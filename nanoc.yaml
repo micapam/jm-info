@@ -62,6 +62,17 @@ data_sources:
     # “full”, meaning that identifiers include file extensions. This can also
     # be “legacy”, primarily used by older Nanoc sites.
     identifier_type: full
+  
+  -
+    type: zotero
+    items_root: /bibliographies
+    collections: # Only show collections with a matching name
+      -
+        name: Late prehistory in fiction
+        description: Sources for my current research into the representation of prehistory in fiction
+      - 
+        name: Digitality
+        description: Social media, technology, etc
 
 # Configuration for the “check” command, which run unit tests on the site.
 checks:

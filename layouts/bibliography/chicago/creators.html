@@ -1,0 +1,1 @@
+<% creators.each_with_index do |creator, idx| %><% if idx == 0 %><%= "#{creator.last_name}, #{creator.first_name}" %><% else %><%= "#{creator.first_name} #{creator.last_name}" %><% end %><% if idx == creators.size - 2 %> and <% elsif idx < creators.size - 2 %>, <% end %><% end %>.

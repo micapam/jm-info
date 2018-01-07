@@ -1,6 +1,29 @@
+GIT
+  remote: https://github.com/amatriain/rest-client-components.git
+  revision: 236ac31ed1a061d479332ff179bf78fcb11edb74
+  ref: 236ac31e
+  specs:
+    rest-client-components (1.4.0)
+      rack (>= 1.0.1)
+      rest-client (>= 1.6.0)
+
+GIT
+  remote: https://github.com/micapam/zotero.git
+  revision: d8cfc96fb40ded4097137d6a750b011a98df18d0
+  specs:
+    zotero (0.2.0)
+      activesupport (>= 4.2.7)
+      json (>= 1)
+      rest-client (>= 2)
+
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (5.1.4)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
     adsf (1.2.1)
       rack (>= 1.0.0)
     coderay (1.1.1)
@@ -10,6 +33,8 @@ GEM
     cri (2.9.1)
       colored (~> 1.2)
     ddplugin (1.0.1)
+    domain_name (0.5.20170404)
+      unf (>= 0.0.5, < 1.0.0)
     dotenv (2.2.1)
     ffi (1.9.18)
     formatador (0.2.5)
@@ -30,6 +55,11 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     highline (1.7.8)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    i18n (0.9.1)
+      concurrent-ruby (~> 1.0)
+    json (2.1.0)
     kramdown (1.13.1)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -37,13 +67,18 @@ GEM
       ruby_dep (~> 1.2)
     lumberjack (1.0.12)
     method_source (0.8.2)
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
     mini_portile2 (2.2.0)
+    minitest (5.11.1)
     nanoc (4.7.10)
       cri (~> 2.8)
       ddplugin (~> 1.0)
       hamster (~> 3.0)
       ref (~> 2.0)
     nenv (0.3.0)
+    netrc (0.11.0)
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
     nokogumbo (1.4.13)
@@ -56,14 +91,18 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     rack (2.0.3)
+    rack-cache (1.7.1)
+      rack (>= 0.4)
     rake (11.3.0)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
     ref (2.0.0)
+    rest-client (2.0.2)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
     ruby_dep (1.5.0)
-    rzotero (0.0.2)
-      nokogiri (>= 1.4.0)
     sanitize (4.5.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.4.4)
@@ -72,21 +111,30 @@ GEM
     slop (3.6.0)
     stringex (2.7.1)
     thor (0.19.4)
+    thread_safe (0.3.6)
+    tzinfo (1.2.4)
+      thread_safe (~> 0.1)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   adsf
   dotenv
   guard-nanoc
   highline
   kramdown
   nanoc (~> 4.7)
+  rack-cache
   rake
-  rzotero
+  rest-client-components!
   sanitize
   stringex
+  zotero!
 
 RUBY VERSION
    ruby 2.3.4p301

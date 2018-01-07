@@ -1,3 +1,6 @@
+require 'dotenv/load'
+require 'active_support/core_ext/string/inflections'
+
 include Nanoc::Helpers::Blogging
 include Nanoc::Helpers::Tagging
 include Nanoc::Helpers::Rendering
@@ -16,6 +19,27 @@ module PostHelper
     else
       "#{Sanitize.clean(post.compiled_content).gsub(/\s+/, ' ')[0..110]}..."
     end
+  end
+
+  def get_bibliography_layout(entry)
+    known_entry_types = %w(
+      blog_post
+      book
+      book_section
+      journal_article
+      newspaper_article
+      thesis
+      video_recording
+      webpage)
+
+    layout = if known_entry_types.include?(entry.kind)
+      entry.kind
+    else
+      'default'
+    end
+
+    #TODO choose other style guides via config
+    "/bibliography/chicago/#{layout}.*"
   end
 
 end

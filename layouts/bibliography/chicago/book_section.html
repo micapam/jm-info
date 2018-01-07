@@ -1,0 +1,12 @@
+<%= render('/bibliography/chicago/creators.*', creators: entry.authors) %>
+'<%= entry.title.chomp('.') %>.'
+In
+<em><%= @entry.book_title %></em>,
+<% if entry.editors.any? %>
+  edited by
+  <%= render('/bibliography/chicago/creators.*', creators: entry.editors) %>,
+<% end %>
+<%= @entry.pages %>.
+<%= @entry.place %>:
+<%= @entry.publisher %>,
+<%= @entry.date %>.

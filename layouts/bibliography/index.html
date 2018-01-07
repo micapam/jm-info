@@ -1,0 +1,6 @@
+<% list.each do |item| %>
+  <div class="row">
+    <h2><%= link_to item[:collection].name, item %></h2>
+    <p><%= item[:description] %></p>
+  </div>
+<% end %>

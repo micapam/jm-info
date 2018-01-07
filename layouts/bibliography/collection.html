@@ -1,0 +1,11 @@
+<h<%= @level %>><%= @collection.name %></h<%= @level %>>
+
+<% @collection.collections.each do |child_collection| %>
+  <%= render('/bibliography/collection.*', collection: child_collection, level: level + 1) %>
+<% end %>
+
+<% @collection.entries.each do |entry| %>
+  <p>
+    <%= render(get_bibliography_layout(entry), entry: entry) %>
+  </p>
+<% end %>

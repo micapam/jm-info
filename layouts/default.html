@@ -48,7 +48,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <% %w(essays fiction poetry reviews).each do |tag| %>
+              <% %w(essays fiction poetry reviews bibliographies).each do |tag| %>
                 <% path = "/#{tag}/" %>
                 <li class="<%= 'active' if @item_rep.path == path %>">
                   <a href="<%= path %>">
