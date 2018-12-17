@@ -1,7 +1,7 @@
 ---
 title: "A left case against borders"
 created_at: 2018-12-17
-thumb:
+thumb: westphalia.jpg
 kind: article
 published: true
 tags:
