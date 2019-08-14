@@ -13,7 +13,7 @@ class ZoteroDataSource < ::Nanoc::DataSource
     end
 
     RestClient.enable Rack::Cache, default_ttl: 2.hours
-    @library = Zotero::Library.new ENV['ZOTERO_USER_ID'], ENV['ZOTERO_KEY']
+    @library = ::Zotero::Library.new ENV['ZOTERO_USER_ID'], ENV['ZOTERO_KEY']
   end
 
   def items
