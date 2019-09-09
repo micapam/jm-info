@@ -1,5 +1,49 @@
+header.site-header {
+  background-color: white;
+  text-align: center;
+  margin-bottom: 12px;
+  padding-bottom: 0px;
+}
+
+.boosted {
+  color: #030aa2;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.site-avatar {
+  margin: 0px 12px;
+  vertical-align: top;
+}
+
+.site-text {
+  display: inline-block;
+  text-align: center;
+}
+
+h1.site-title {
+  color: #030aa2;
+  font-size: 58px;
+  line-height: 0.9;
+  margin-top: 48px;
+  margin-bottom: 0px;
+  font-family: 'Adobe Garamond Pro', Georgia, Times, 'Times New Roman', serif
+}
+
+h2.site-subtitle {
+  font-size: 24px;
+  line-height: 0.9;
+  margin-top: 0px;
+}
+
 .navbar-brand {
   padding: 6px 8px 12px 12px !important;
+}
+
+.navbar-title {
+  padding-top: 10px;
+  font-size: 24px;
+  color: #030aa2;
 }
 
 .btn-social-icon {
@@ -7,8 +51,27 @@
   background-color: white;
 }
 
-.fa-twitter, .fa-facebook {
+.fa-twitter, .fa-facebook, .fa-instagram {
   margin-top: 3px;
+}
+
+.home-row { 
+  padding-top: 24px;
+  border-bottom: 0.5px solid #eee;
+  padding-bottom: 24px;
+}
+
+.home-photo {
+  margin-bottom: 24px;
+}
+
+.list-item-row {
+  border-bottom: 0.5px solid #eee;
+  padding-bottom: 12px;
+}
+
+.list-item-row h3 {
+  padding-top: 12px;
 }
 
 aside {
@@ -36,7 +99,20 @@ aside {
   text-align: right;
 }
 
+.post-teaser {
+  font-size: 20px;
+}
+
+.book-cover {
+  border: 1px solid gray;
+}
+
 a {
-  color: #2f2ba2;
+  color: #030aa2;
   text-decoration: underline;
+}
+
+footer {
+  margin: 24px;
+  text-align: center;
 }

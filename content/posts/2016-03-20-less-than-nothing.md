@@ -9,6 +9,7 @@ tags:
 source:
   publication: Overland
   url: https://overland.org.au/2016/03/less-than-nothing-on-fairfax-and-the-future/
+teaser: With the upset of the delicate balance of technological and economic forces that have sustained the newspaper for so long, its viability as a product has become increasingly uncertain. The means of production used to be printing press; now it’s the giant server farm. Google famously promises to ‘organise the world’s information’ – not to produce it...
 ---
 
 At the _Overland_ blog, I wrote on the Fairfax job cuts, the crisis of journalism, and the (lack of) solidarity in the digital media industry.

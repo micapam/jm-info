@@ -9,6 +9,7 @@ tags:
 source:
   url: http://www.ambitmagazine.co.uk/
   publication: Ambit 215
+teaser: How angry his uncle will be when he realises, as he must, that the phone has been stolen. Everyone will know who has done it. That moment of recklessness – of greed, of envy bubbling up and congealing into something criminal, irreversible – hovers in his mind...
 ---
 
 Excerpt:

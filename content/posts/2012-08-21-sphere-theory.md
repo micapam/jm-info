@@ -10,6 +10,7 @@ tags:
 source:
   url: http://lareviewofbooks.org/review/sphere-theory-a-case-for-connectedness
   publication: LA Review of Books
+teaser: Sloterdijk’s trilogy is nothing if not a giant meta-narrative, wheels within wheels, an heroically immodest exercise in universal history of the most defiantly, monstrously unfashionable kind...
 ---
 
 > …Sloterdijk’s trilogy is nothing if not a giant meta-narrative, wheels within wheels, an heroically immodest exercise in universal history of the most defiantly, monstrously unfashionable kind.

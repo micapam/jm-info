@@ -9,6 +9,7 @@ tags:
 source:
   url: https://islandmag.com/
   publication: Island 121
+teaser: Issue 121 of _Island_ magazine is out. Among the essays, stories and poetry is my poem, ‘Good Works’...
 ---
 
 Issue 121 of _Island_ magazine is out. Among the essays, stories and poetry is my poem, ‘Good Works’:

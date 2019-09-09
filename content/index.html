@@ -1,6 +1,52 @@
 ---
 title: Home
-thumb: logo.jpg
+thumb: avatar_600.png
 ---
 
-<%= render '/list.*', list: sorted_articles %>
+<div class="row home-row">
+  <div class="col-md-4">
+    <img class="align-self-center home-photo" src="/media/home.png" /><br />
+    <p>I'm interested in the spaces between things: between prose and poetry,
+      idea and narrative, the written and the spoken word.</p>
+    <p>Currently a doctoral student at the Writing &amp; Society Research
+      Centre, Western Sydney University, I'm researching prehistory in fiction:
+      narrative, form and representation.</p>
+    <p>My friend Seb and I run the record label <a href="http://innariddim.com">
+      Inna Riddim</a>, I host the <a href="https://hearthis.at/altitude507/">
+      Altitude 507</a> music podcast, and I'm part of the
+      <a href="https://www.facebook.com/reggaevinylsocialclub">Reggae Vinyl
+      Social Club</a>.</p>
+    <p>Feel free to contact me via <a href="https://twitter.com/JoshuaMostafa">
+      Twitter</a> or <a href="https://www.facebook.com/joshuamostafa.info/">
+      Facebook</a>.</p>
+  </div>
+  <div class="col-md-4 text-center">
+    <img class="align-self-center book-cover" src="/media/thumbs/offshore.png" />
+  </div>
+  <div class="col-md-4">
+    <p class="boosted"><em>Offshore</em>: winner of the 2019 Seizure 'Viva la Novella'
+      prize</p>
+    <p>'One of the reasons Joshua’s scenes are so compelling is that they could
+      be set today, right now, and that they are set in the world – the Sydney,
+      and the Blue Mountains – that we know....The way Joshua paces and
+      interweaves these narratives, uses them to maintain suspense – the
+      erotics of this text, if you like – is close to masterful.' - David
+      Brooks, author of <em>The Fern Tattoo</em> and <em>The Grass Library</em>.</p>
+    <p>'In the vein of M. Barnhard Eldershaw's cult classic <em>Tomorrow and
+      Tomorrow</em>, <em>Offshore</em> constructs a near future that's vivid,
+      terrifying, and eerily feasible.' &dash; Shaun Prescott, author of
+      <em>The Town</em>.</p>
+    <p>In the near future, Sydney is collapsing into chaos. The internet
+      disappears, the water isn't running and the electricity goes out.
+      An academic and a medical student try to smuggle themselves out of the
+      country. But when their boat gets stopped, they are interned on an island
+      detention centre somewhere in the Indian Ocean...</p>
+    <p>[ <a href="/2019/09/offshore/">
+      more info and links to purchase
+    </a> ]</p>
+  </div>
+</div>
+
+<%= render '/list.*', list: posts.first(12) %>
+
+<p><a href="/older">Older articles</a></p>

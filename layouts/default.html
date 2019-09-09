@@ -7,10 +7,27 @@
     <link rel="stylesheet" href="/resources/font-awesome.min.css" />
     <link rel="stylesheet" href="/resources/bootstrap-social.css" />
     <link rel="stylesheet" href="/resources/style.css" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/media/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/media/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/media/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/media/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/media/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/media/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/media/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/media/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/media/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/media/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/media/favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="/media/favicon/ms-icon-144x144.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/content/media/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/content/media/favicon-16x16.png">
+
     <script type="text/javascript" src="/resources/jquery.min.js"></script>
-    <script type="text/javascript" src="/resources/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/resources/bootstrap.bundle.js"></script>
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
     <meta property="og:url" content="http://joshuamostafa.info<%= @item_rep.path %>" />
     <meta property="og:type" content="article" />
@@ -30,6 +47,19 @@
   </head>
   <body>
     <div class="container">
+      <header class="site-header jumbotron hidden-xs">
+        <a href="/">
+          <img class="site-avatar img-circle img-fluid" src="/media/avatar_160.jpg" />
+        </a>
+        <div class="site-text">
+          <h1 class="site-title">
+            Joshua Mostafa
+          </h1>
+          <h2 class="site-subtitle">
+            word, sound &amp; prosody
+          </h2>
+        </div>
+      </header>
       <nav class="navbar navbar-default">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -40,15 +70,21 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">
-              <img class="img-rounded img-fluid" src="/media/logo_48.png" />
+            <a class="navbar-brand visible-xs" href="/">
+              <img class="img-rounded img-fluid" src="/media/avatar_48.jpg" />
             </a>
+            <span class="navbar-title visible-xs">Joshua Mostafa</span>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <% %w(essays fiction poetry reviews bibliographies).each do |tag| %>
+              <li class="<%= 'active' if @item_rep.path == '/2019/09/offshore/' %>">
+                <a href="/2019/09/offshore/">
+                  <em>Offshore</em>
+                </a>
+              </li>
+              <% %w(essays fiction poetry bibliographies).each do |tag| %>
                 <% path = "/#{tag}/" %>
                 <li class="<%= 'active' if @item_rep.path == path %>">
                   <a href="<%= path %>">
@@ -67,6 +103,8 @@
                   <li><a href="https://www.zotero.org/micapam/items/">Research</a></li>
                   <li role="separator" class="divider"></li>                
                   <li><a href="http://www.innariddim.com/">Inna Riddim</a></li>
+                  <li><a href="https://hearthis.at/altitude507/">Altitude 507</a></li>
+                  <li><a href="https://www.facebook.com/reggaevinylsocialclub">R. V. S. C.</a></li>
                   <li><a href="https://www.discogs.com/user/micapam/collection">Records</a></li>
                   <li role="separator" class="divider"></li>
                   <li><a href="http://chez.joshuamostafa.info/">Recipes</a></li>
@@ -75,9 +113,12 @@
               <li><a class="btn btn-social-icon btn-twitter" href="https://twitter.com/JoshuaMostafa">
                 <span class="fa fa-twitter"></span>
               </a></li>
-              <!-- <li><a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/joshuamostafa.info/">
+              <li><a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/joshuamostafa.info/">
                 <span class="fa fa-facebook"></span>
-              </a></li> -->
+              </a></li>
+              <li><a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/josh.mostafa/">
+                <span class="fa fa-instagram"></span>
+              </a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -86,5 +127,8 @@
         <%= yield %>
       </div>
     </div>
+    <footer>
+        ©️️ Joshua Mostafa 2019
+    </footer>
   </body>
 </html>

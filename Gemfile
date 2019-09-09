@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.5.1'
+ruby '2.3.7'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
@@ -22,4 +22,5 @@ group :nanoc do
   gem 'adsf'
   gem 'kramdown'
   gem 'sanitize'
+  gem 'fog'
 end
