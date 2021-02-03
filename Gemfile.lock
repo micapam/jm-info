@@ -354,7 +354,7 @@ DEPENDENCIES
   zotero!
 
 RUBY VERSION
-   ruby 2.3.7p456
+   ruby 2.7.2p137
 
 BUNDLED WITH
    1.17.3

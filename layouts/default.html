@@ -84,6 +84,11 @@
                   <em>Offshore</em>
                 </a>
               </li>
+              <li class="<%= 'active' if @item_rep.path == '/2020/08/danuquecla/' %>">
+                <a href="/2020/08/danuquecla/">
+                  <em>Danuquécla</em>
+                </a>
+              </li>
               <% %w(essays fiction poetry bibliographies).each do |tag| %>
                 <% path = "/#{tag}/" %>
                 <li class="<%= 'active' if @item_rep.path == path %>">
@@ -128,7 +133,7 @@
       </div>
     </div>
     <footer>
-        ©️️ Joshua Mostafa 2019
+        ©️️ Joshua Mostafa 2020
     </footer>
   </body>
 </html>
