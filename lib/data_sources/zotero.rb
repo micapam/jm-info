@@ -17,9 +17,10 @@ class ZoteroDataSource < ::Nanoc::DataSource
   end
 
   def items
-    @library.collections.select {|collection| 
+    @library.collections.select do |collection|
+      next false if ENV['ZOTERO_SKIP']
       @config[:collections].collect{|c| c[:name]}.include? collection.name
-    }.collect do |collection| 
+    end.collect do |collection| 
       collection.preload # Don't break nanoc's frozen data rule
 
       description = @config[:collections].find {|c|

@@ -9,8 +9,13 @@ include Nanoc::Helpers::LinkTo
 module PostHelper
   def posts(tag: nil, include_books: false) 
     sorted_articles.select do |article|
-      (tag.nil? || article[:tags].include?(tag)) &&
-        (include_books || !article[:tags].include?('book'))
+      next false if !include_books && article[:tags].include?('book')
+      next false if tag.present? && !article[:tags].include?(tag)
+      next false if article[:tags].include?('hidden')
+
+      true
+      # (tag.nil? || article[:tags].include?(tag)) &&
+      #   (include_books || !article[:tags].include?('book'))
     end
   end
 

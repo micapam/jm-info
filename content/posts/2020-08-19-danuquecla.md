@@ -4,12 +4,12 @@ created_at: 2020-08-19
 thumb: vinca.jpg
 kind: article
 published: true
-tags: 
+tags:
   - drama
   - book
 ---
 
-Since 2001, I've been reading about the Copper and Bronze Ages of Europe, with a view to writing a work of fiction set sometime in that era. Over time, many of the specifics have changed: the time period, the location, the literary form, the characters, the story. I first conceived of it as a novel along the lines of J. H. Rosny _ainé_'s _Guerre de Feu_ or Jim Crace's _The Gift of Stones_. Currently, I'm working instead on a verse drama that will form part of a cycle, to which I've given the working title _Danuquécla_. It's possible that that may also change; the project continues.
+Since 2001, I've been reading about the Copper and Bronze Ages of Europe, with a view to writing a work of fiction set sometime in that era. At first, I intended to write a novel along the lines of J. H. Rosny _ainé_'s _Guerre de Feu_ or Jim Crace's _The Gift of Stones_, but over time the project has changed shape, and I'm currently working on a verse drama that will form part of a cycle, to which I've given the working title _Danuquécla_. It's possible that that may also change; the project continues.
 
 This page is a catch-all for things I've written about this, my longest-running writing project, the one from which I've been distracted many times, but to which I keep returning. I'll keep this page updated with links to everything of mine that's published anywhere about the project. Eventually (hopefully) there will be some actual literary work, which I will announce here too.
 
@@ -37,4 +37,8 @@ I wrote my first peer-reviewed article for the _Australian Humanities Review_, o
 
 In 2019, I attended an archaeological dig near Pazardzhik, Bulgaria. I [wrote about the experience](/2020/05/mud) for the _Sydney Review of Books)_.
 
-(That's all so far, but watch this space.)
+## Data store for epic formulae
+
+I am working on [a simple system to store and retrieve epic formulae](https://github.com/micapam/epic-formulae), allowing grouping by metre and by topic; this is assisting me in devising a metrical system for some of the poetry in the project.
+
+(Watch this space for more updates.)
