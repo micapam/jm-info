@@ -9,6 +9,7 @@ tags:
 source:
   url: http://www.litro.co.uk/2013/03/obsolescence/
   publication: Litro 
+teaser: Rupturing the fuel tanks on even the smallest of our units could be extremely hazardous to customers. It would compromise our commitment to excellence in providing safe, effective and robust solutions to our valued customers. The potential adverse effects to the market reputation of the product line are extremely severe!...
 ---
 
 Extract:

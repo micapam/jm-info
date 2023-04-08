@@ -1,14 +1,19 @@
-<% list.each_slice(4) do |row| %>
-  <div class="row">
+
+<% if defined?(list_title) %>
+  <h2><%= list_title %>:</h2>
+<% end %>
+
+<% list.each_slice(3) do |row| %>
+  <div class="row list-item-row">
     <% row.each do |post| %>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <a class="post-link" href="<%= post.path %>">
           <div class="post-thumb post-image" style="background-image:url('/media/thumbs/<%= post[:thumb] %>')"></div>
-          <span class="post-caption">
-            <%= post[:title] %> &rsaquo;
-          </span>
-        </div>
-      </a>
+        </a>
+        <h3><a class="post-link" href="<%= post.path %>">
+          <%= post[:title] %>
+        </a></h3>
+      </div>
     <% end %>
   </div>
 <% end %>

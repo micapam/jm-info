@@ -9,6 +9,7 @@ tags:
 source:
   url: http://oblongmagazine.com/2013/09/12/mr-mordens-tree-2/
   publication: Oblong vol. 2
+teaser: 'This was what he did, plant trees, though there was no point, really: trees grew of their own accord, as they had done before the first bald, bickering apes descended from their branches, and they would do so long after the extinction of this interloping species, a thought that gave him some satisfaction...'
 ---
 
 Extract: 

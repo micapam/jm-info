@@ -1,0 +1,83 @@
+---
+title: Contact
+---
+
+<form class="validatable" id="contact-form" novalidate>
+	<div class="form-group">
+		<label for="name">Name</label>
+		<input type="text" name="name" class="form-control" id="name-input" placeholder="Enter name" required>
+		<div class="invalid-feedback">
+			Please enter your name.
+		</div>
+	</div>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" name="email" class="form-control" id="email-input" placeholder="Enter email" required>
+		<div class="invalid-feedback">
+			Please enter your email address.
+		</div>
+  </div>
+	<div class="form-group">
+    <label for="message">Message</label>
+    <textarea class="form-control" name="message" id="message-input" rows="3" required></textarea>
+		<div class="invalid-feedback">
+			Please enter a message.
+		</div>
+  </div>
+  <button type="submit" id="submit" class="btn btn-primary">Send message</button>
+</form>
+<div class="alert alert-success" role="alert" id="success-message" style="display:none">
+  Your message was sent! :)
+</div>
+<div class="alert alert-warning" role="alert" id="failure-message" style="display:none">
+  Your message failed to send :(
+</div>
+
+<script>
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+		const API_GATWAY_URL = 'https://i07my6rbhh.execute-api.ap-southeast-2.amazonaws.com/prod/contact'
+		const name = document.querySelector('#name-input')
+		const email = document.querySelector('#email-input')
+		const message = document.querySelector('#message-input')
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('validatable');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+				event.preventDefault();
+        if (form.checkValidity() === false) {
+					console.warn('Could not send message')
+          event.stopPropagation();
+        }
+				else {
+					axios.post(API_GATWAY_URL, {
+			        name: name.value,
+			        email: email.value,
+			        message: message.value
+			    },
+			    {
+			        headers: {
+			            'Content-Type': 'application/json'
+			        }
+			    })
+					.then(res => {
+			        document.getElementById("success-message").style.display = "block";
+			        document.getElementById("failure-message").style.display = "none";
+							document.getElementById("contact-form").style.display = "none";
+			    })
+			    .catch(err => {
+			        document.getElementById("success-message").style.display = "none";
+			        document.getElementById("failure-message").style.display = "block";
+			    })
+				}
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

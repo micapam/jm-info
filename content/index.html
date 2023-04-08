@@ -1,6 +1,35 @@
 ---
 title: Home
-thumb: logo.jpg
+thumb: avatar_600.png
 ---
 
-<%= render '/list.*', list: sorted_articles %>
+<div class="container-fluid px-4 py-5 my-5 text-center">
+	<div class="lc-block col-lg-6 mx-auto mb-4">
+		<div editable="rich" class="home-intro">
+      <p class="lead boosted">Joshua Mostafa writes <a href="/fiction">fiction</a>,
+        <a href="/essays">essays</a>, <a href="/poetry">poetry</a> and
+        lyrics.</p>
+      <p>I'm interested in the spaces between things:<br />prose and poetry,
+        idea and narrative, the written and the spoken word.</p>
+      <p>I'm a doctoral student at the Writing &amp; Society Research
+        Centre, researching <a href="/2020/08/danuquecla">the representation of
+        the Bronze Age in creative writing</a>.
+      <p>This is my personal website. Elsewhere on the web, you can find my
+        <a href="https://hcommons.org/members/micapam/">academic papers</a>,
+        <a href="http://www.librarything.com/catalog/micapam">bookshelves</a>,
+        <a href="https://www.zotero.org/micapam/items/">references</a>,
+        <a href="https://www.discogs.com/user/micapam/collection">record
+          crates</a>,
+        <a href="https://www.mixcloud.com/micapam/">DJ mixes</a> and
+        <a href="http://chez.joshuamostafa.info/">recipes</a>. My friend Seb
+				  and I run the record label
+        <a href="http://innariddim.com">Inna Riddim</a>.
+			</p>
+      <p>Feel free to <a href="/contact">contact me</a>.</p>
+		</div>
+	</div>
+</div>
+
+<%= render '/list.*', list: posts(include_books: true).first(12) %>
+
+<p><a href="/older">Older articles</a></p>

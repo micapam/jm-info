@@ -1,14 +1,82 @@
-.navbar-brand {
-  padding: 6px 8px 12px 12px !important;
+body, p, div {
+  /* background-color: #1b1857; */
+  color: white;
+  font-family: "Hoefler Text", Garamond, serif;
 }
+
+header.site-header {
+  text-align: center;
+  margin-bottom: 12px;
+  padding-bottom: 0px;
+}
+
+.boosted {
+  font-size: 36px !important;
+  margin-bottom: 52px;
+}
+
+.home-intro p {
+  font-size: 28px;
+}
+
+.site-text {
+  display: inline-block;
+  text-align: center;
+}
+
+h1.site-title {
+  /* color: #030aa2; */
+  font-size: 38px;
+  line-height: 0.9;
+  margin-top: 48px;
+  margin-bottom: 40px;
+  font-weight: 800;
+  font-family: 'system-ui', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.site-title a {
+  color: white;
+  text-decoration: none;
+}
+
+h2.site-subtitle {
+  font-size: 24px;
+  line-height: 0.9;
+  margin-top: 0px;
+}
+
+/* .navbar-title {
+  padding-top: 10px;
+  font-size: 24px;
+  color: #030aa2;
+} */
 
 .btn-social-icon {
   margin: 10px 0px 0px 8px;
   background-color: white;
 }
 
-.fa-twitter, .fa-facebook {
+.fa-twitter, .fa-facebook, .fa-instagram {
   margin-top: 3px;
+}
+
+.home-row {
+  padding-top: 24px;
+  border-bottom: 0.5px solid #eee;
+  padding-bottom: 24px;
+}
+
+.home-photo {
+  margin-bottom: 24px;
+}
+
+.list-item-row {
+  border-bottom: 0.5px solid #eee;
+  padding-bottom: 12px;
+}
+
+.list-item-row h3 {
+  padding-top: 12px;
 }
 
 aside {
@@ -36,7 +104,20 @@ aside {
   text-align: right;
 }
 
+.post-teaser {
+  font-size: 20px;
+}
+
+.book-cover {
+  border: 1px solid gray;
+}
+
 a {
-  color: #2f2ba2;
+  color: #d9d8eb;
   text-decoration: underline;
+}
+
+footer {
+  margin: 24px;
+  text-align: center;
 }

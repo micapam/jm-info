@@ -1,6 +1,6 @@
 ---
 title: Fiction
-thumb: logo.jpg
+thumb: avatar_600.png
 ---
 
-<%= render '/list.*', list: items_with_tag('fiction') %>
+<%= render '/list.*', list: posts(tag: 'fiction', include_books: true), list_title: 'Fiction' %>

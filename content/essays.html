@@ -1,6 +1,6 @@
 ---
 title: Essays
-thumb: logo.jpg
+thumb: avatar_600.png
 ---
 
-<%= render '/list.*', list: items_with_tag('essay') %>
+<%= render '/list.*', list: posts(tag: 'essay'), list_title: 'Essays' %>
