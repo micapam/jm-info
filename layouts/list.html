@@ -1,16 +1,19 @@
-<% list.each do |post| %>
+
+<% if defined?(list_title) %>
+  <h2><%= list_title %>:</h2>
+<% end %>
+
+<% list.each_slice(3) do |row| %>
   <div class="row list-item-row">
-    <div class="col-md-3">
-      <a class="post-link" href="<%= post.path %>">
-        <div class="post-thumb post-image" style="background-image:url('/media/thumbs/<%= post[:thumb] %>')"></div>
-      </a>
-    </div>
-    <div class="col-md-9">
-      <h3><a class="post-link" href="<%= post.path %>">
-        <%= post[:title] %>
-      </a></h3>
-      <p class="post-teaser"><%= get_post_description(post) %></p>
-      <p><strong>[ <a href="<%= post.path %>">read more</a> ]</strong></p>
-    </div>
+    <% row.each do |post| %>
+      <div class="col-md-4">
+        <a class="post-link" href="<%= post.path %>">
+          <div class="post-thumb post-image" style="background-image:url('/media/thumbs/<%= post[:thumb] %>')"></div>
+        </a>
+        <h3><a class="post-link" href="<%= post.path %>">
+          <%= post[:title] %>
+        </a></h3>
+      </div>
+    <% end %>
   </div>
 <% end %>

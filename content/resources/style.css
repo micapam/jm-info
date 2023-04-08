@@ -1,19 +1,22 @@
+body, p, div {
+  /* background-color: #1b1857; */
+  color: white;
+  font-family: "Hoefler Text", Garamond, serif;
+}
+
 header.site-header {
-  background-color: white;
   text-align: center;
   margin-bottom: 12px;
   padding-bottom: 0px;
 }
 
 .boosted {
-  color: #030aa2;
-  font-size: 150%;
-  font-weight: bold;
+  font-size: 36px !important;
+  margin-bottom: 52px;
 }
 
-.site-avatar {
-  margin: 0px 12px;
-  vertical-align: top;
+.home-intro p {
+  font-size: 28px;
 }
 
 .site-text {
@@ -22,12 +25,18 @@ header.site-header {
 }
 
 h1.site-title {
-  color: #030aa2;
-  font-size: 58px;
+  /* color: #030aa2; */
+  font-size: 38px;
   line-height: 0.9;
   margin-top: 48px;
-  margin-bottom: 0px;
-  font-family: 'Adobe Garamond Pro', Georgia, Times, 'Times New Roman', serif
+  margin-bottom: 40px;
+  font-weight: 800;
+  font-family: 'system-ui', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.site-title a {
+  color: white;
+  text-decoration: none;
 }
 
 h2.site-subtitle {
@@ -36,15 +45,11 @@ h2.site-subtitle {
   margin-top: 0px;
 }
 
-.navbar-brand {
-  padding: 6px 8px 12px 12px !important;
-}
-
-.navbar-title {
+/* .navbar-title {
   padding-top: 10px;
   font-size: 24px;
   color: #030aa2;
-}
+} */
 
 .btn-social-icon {
   margin: 10px 0px 0px 8px;
@@ -55,7 +60,7 @@ h2.site-subtitle {
   margin-top: 3px;
 }
 
-.home-row { 
+.home-row {
   padding-top: 24px;
   border-bottom: 0.5px solid #eee;
   padding-bottom: 24px;
@@ -108,7 +113,7 @@ aside {
 }
 
 a {
-  color: #030aa2;
+  color: #d9d8eb;
   text-decoration: underline;
 }
 

@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title><%= @item[:title] %> - Joshua Mostafa</title>
-    <link rel="stylesheet" href="/resources/bootstrap-journal.min.css" />
+
+    <link rel="stylesheet" href="/resources/bootstrap-vapor.min.css" />
     <link rel="stylesheet" href="/resources/font-awesome.min.css" />
     <link rel="stylesheet" href="/resources/bootstrap-social.css" />
     <link rel="stylesheet" href="/resources/style.css" />
@@ -28,6 +29,7 @@
 
     <script type="text/javascript" src="/resources/jquery.min.js"></script>
     <script type="text/javascript" src="/resources/bootstrap.bundle.js"></script>
+
     <meta name="generator" content="Nanoc <%= Nanoc::VERSION %>">
     <meta property="og:url" content="http://joshuamostafa.info<%= @item_rep.path %>" />
     <meta property="og:type" content="article" />
@@ -51,92 +53,63 @@
   <body>
     <div class="container">
       <header class="site-header jumbotron hidden-xs">
-        <a href="/">
-          <img class="site-avatar img-circle img-fluid" src="/media/avatar_160.jpg" />
-        </a>
-        <div class="site-text">
-          <h1 class="site-title">
-            Joshua Mostafa
-          </h1>
-          <h2 class="site-subtitle">
-            word, sound &amp; prosody
-          </h2>
-        </div>
-      </header>
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+        <h1 class="site-title">
+          <a href="/">word, sound &amp; prosody</a>
+        </h1>
+        <!-- <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand visible-xs" href="/">
-              <img class="img-rounded img-fluid" src="/media/avatar_48.jpg" />
-            </a>
-            <span class="navbar-title visible-xs">Joshua Mostafa</span>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li class="<%= 'active' if @item_rep.path == '/2019/09/offshore/' %>">
-                <a href="/2019/09/offshore/">
-                  <em>Offshore</em>
-                </a>
-              </li>
-              <li class="<%= 'active' if @item_rep.path == '/2020/08/danuquecla/' %>">
-                <a href="/2020/08/danuquecla/">
-                  <em>Danuquécla</em>
-                </a>
-              </li>
-              <% %w(essays fiction poetry bibliographies).each do |tag| %>
-                <% path = "/#{tag}/" %>
-                <li class="<%= 'active' if @item_rep.path == path %>">
-                  <a href="<%= path %>">
-                    <%= tag.capitalize %>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="<%= 'active' if @item_rep.path == '/2019/09/offshore/' %>">
+                  <a href="/2019/09/offshore/">
+                    <em>Offshore</em>
                   </a>
                 </li>
-              <% end %>
-              <!--<li></li><%= @item_rep.path %>-->
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elsewhere <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="https://hcommons.org/members/micapam/">Academic papers</a></li>
-                  <li><a href="http://www.librarything.com/catalog/micapam">Bookshelf</a></li>
-                  <li><a href="https://www.zotero.org/micapam/items/">Research</a></li>
-                  <li role="separator" class="divider"></li>                
-                  <li><a href="http://www.innariddim.com/">Inna Riddim</a></li>
-                  <li><a href="https://hearthis.at/altitude507/">Altitude 507</a></li>
-                  <li><a href="https://www.facebook.com/reggaevinylsocialclub">R. V. S. C.</a></li>
-                  <li><a href="https://www.discogs.com/user/micapam/collection">Records</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="http://chez.joshuamostafa.info/">Recipes</a></li>
-                </ul>
-              </li>
-              <li><a class="btn btn-social-icon btn-twitter" href="https://twitter.com/JoshuaMostafa">
-                <span class="fa fa-twitter"></span>
-              </a></li>
-              <!-- <li><a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/joshuamostafa.info/">
-                <span class="fa fa-facebook"></span>
-              </a></li> -->
-              <li><a class="btn btn-social-icon btn-instagram" href="https://www.instagram.com/josh.mostafa/">
-                <span class="fa fa-instagram"></span>
-              </a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+                <li class="<%= 'active' if @item_rep.path == '/2020/08/danuquecla/' %>">
+                  <a href="/2020/08/danuquecla/">
+                    <em>Danuquécla</em>
+                  </a>
+                </li>
+                <% %w(essays fiction poetry bibliographies).each do |tag| %>
+                  <% path = "/#{tag}/" %>
+                  <li class="<%= 'active' if @item_rep.path == path %>">
+                    <a href="<%= path %>">
+                      <%= tag.capitalize %>
+                    </a>
+                  </li>
+                <% end %>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Elsewhere
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a href="https://hcommons.org/members/micapam/">Academic papers</a></li>
+                    <li><a href="http://www.librarything.com/catalog/micapam">Bookshelf</a></li>
+                    <li><a href="https://www.zotero.org/micapam/items/">Research</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="http://www.innariddim.com/">Inna Riddim</a></li>
+                    <li><a href="https://hearthis.at/altitude507/">Altitude 507</a></li>
+                    <li><a href="https://www.discogs.com/user/micapam/collection">Records</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="http://chez.joshuamostafa.info/">Recipes</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="https://twitter.com/JoshuaMostafa">Twitter</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav> -->
+      </header>
       <div>
         <%= yield %>
       </div>
     </div>
     <footer>
-        ©️️ Joshua Mostafa 2020
+        ©️️ Joshua Mostafa <%= Time.now.year %>
     </footer>
   </body>
 </html>

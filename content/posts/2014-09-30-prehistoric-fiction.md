@@ -3,7 +3,7 @@ title: "Pre-historical fiction"
 created_at: 2014-09-30
 thumb: danube_mist.jpg
 kind: article
-tags: 
+tags:
   - essay
 published: true
 ---
@@ -12,9 +12,9 @@ This month, I’ve been the guest blogger for _Southerly_. I've been travelling 
 
 All the posts are up now – here they are:
 
-1. [Historical fiction](http://southerlyjournal.com.au/2014/09/06/mostafa-untitled-historical-fiction-part-i/)
-1. [(Pre)historical fiction](http://southerlyjournal.com.au/2014/09/17/prehistorical-fiction/)
-1. [Mode, genre and time](http://southerlyjournal.com.au/2014/09/25/mode-genre-and-time/)
-1. [Klekkende Høj](http://southerlyjournal.com.au/2014/09/30/klekkende-hoj/)
+1. [Historical fiction](https://southerlylitmag.com.au/mostafa-untitled-historical-fiction-part-i/)
+1. [(Pre)historical fiction](https://southerlylitmag.com.au/prehistorical-fiction/)
+1. [Mode, genre and time](https://southerlylitmag.com.au/mode-genre-and-time/)
+1. [Klekkende Høj](https://southerlylitmag.com.au/mode-genre-and-time/)
 
 There is a new issue of _Southerly_ (the journal itself) coming out soon, too. I’ve got a piece in there as well; I’ll link that up once it’s launched.

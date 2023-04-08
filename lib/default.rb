@@ -7,7 +7,7 @@ include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::LinkTo
 
 module PostHelper
-  def posts(tag: nil, include_books: false) 
+  def posts(tag: nil, include_books: false)
     sorted_articles.select do |article|
       next false if !include_books && article[:tags].include?('book')
       next false if tag.present? && !article[:tags].include?(tag)

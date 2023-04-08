@@ -3,3 +3,4 @@ output/*
 crash.log
 .env
 nanoc.yaml
+Archive.zip
