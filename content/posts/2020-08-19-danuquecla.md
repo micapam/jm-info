@@ -9,7 +9,7 @@ tags:
   - book
 ---
 
-Since 2001, I've been reading about the Copper and Bronze Ages of Europe, with a view to writing a work of fiction set sometime in that era. At first, I intended to write a novel along the lines of J. H. Rosny _ainé_'s _Guerre de Feu_ or Jim Crace's _The Gift of Stones_, but over time the project has changed shape, and I'm currently working on a verse drama that will form part of a cycle, to which I've given the working title _Danuquécla_. It's possible that that may also change; the project continues.
+Since 2001, I've been reading about the Copper and Bronze Ages of Europe, with a view to writing a work of fiction set sometime in that era. At first, I intended to write a novel along the lines of J. H. Rosny _ainé_'s _Guerre de Feu_ or Jim Crace's _The Gift of Stones_, but over time the project has changed shape, and I'm currently working on a verse drama, working title _Thíasuyam_.
 
 This page is a catch-all for things I've written about this, my longest-running writing project, the one from which I've been distracted many times, but to which I keep returning. I'll keep this page updated with links to everything of mine that's published anywhere about the project. Eventually (hopefully) there will be some actual literary work, which I will announce here too.
 
@@ -25,9 +25,7 @@ The same year, I also edited _New Trad_, [a volume of poems and essays on poetic
 
 In 2017, I started part-time research for a doctorate at the Writing & Society Research Centre, Western Sydney University. It's a hybrid, 'creative' doctorate: half my effort goes into writing a creative work, and the other half is on a separate but related exegesis. My topic is 'prehistory in fiction'.
 
-To prepare for my confirmation of candidature, I recorded the slideshow and talk I gave to my supervisory panel, which described the direction I intended my research to take. The recording is [on YouTube](https://www.youtube.com/watch?v=nHqM6NR_Na8), though it's pretty dry and I wouldn't recommend watching it, unless you happen to be as obssessed by this topic as I am.
-
-Perhaps a bit more interesting is 'Ghosts and Grave Robbers', a [poster presentation](/media/gagr.pdf) I made which combines facts, photos and diagrams alongside a poem that dabbles in some of the formal experimentation I've been thinking about for the project as a whole.
+The thesis is still underway. You can look at 'Ghosts and Grave Robbers', a [poster presentation](/media/gagr.pdf) I made which combines facts, photos and diagrams alongside a poem that dabbles in some of the formal experimentation I've been thinking about for the project as a whole.
 
 ## Fiction and archaeology
 
@@ -39,6 +37,6 @@ In 2019, I attended an archaeological dig near Pazardzhik, Bulgaria. I [wrote ab
 
 ## Data store for epic formulae
 
-I am working on [a simple system to store and retrieve epic formulae](https://github.com/micapam/epic-formulae), allowing grouping by metre and by topic; this is assisting me in devising a metrical system for some of the poetry in the project.
+I am working on [a simple system to store and retrieve epic formulae](https://github.com/micapam/epic-formulae), allowing grouping by metre and by topic; this is assisting me in devising a metrical system for some of the poetry in the project. I recently presented a paper on this work: see [this video](https://www.youtube.com/watch?v=zZ1g9UwFV28).
 
 (Watch this space for more updates.)
