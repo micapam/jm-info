@@ -4,3 +4,4 @@ crash.log
 .env
 nanoc.yaml
 Archive.zip
+node_modules
