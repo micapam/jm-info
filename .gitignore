@@ -1,8 +1,8 @@
-tmp/*
-output/*
+.old/nanoc/tmp/*
+.old/nanoc/output/*
+.olc/nanoc/nanoc.yaml
 crash.log
 .env
-nanoc.yaml
 Archive.zip
 resources/contact/lambda/node_modules
 **/.DS_Store
